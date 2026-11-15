@@ -1,0 +1,42 @@
+Lesson 2 · S3 Ticket counter queue · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+from collections import deque
+
+
+def remaining_after(names, k):
+  queue = deque()
+  # 1. add everyone at the back
+  for name in names:
+    queue.append(name)
+
+  # 2. serve k people from the front
+  for _ in range(min(k, len(queue))):
+    queue.popleft()
+
+  return list(queue)
+
+
+print(remaining_after(["Asha", "Ravi", "Meena"], 2))
+```
+
+
+
+# Only the code
+from collections import deque
+
+def remaining_after(names, k):
+  queue = deque()
+  # 1. add everyone at the back
+  for name in names:
+    queue.append(name)
+
+  # 2. serve k people from the front
+  for _ in range(min(k, len(queue))):
+    queue.popleft()
+
+  return list(queue)
+
+
+print(remaining_after(["Asha", "Ravi", "Meena"], 2))
