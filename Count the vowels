@@ -1,0 +1,30 @@
+Lesson 2 · A1 Count the vowels · Python
+Name: Shantanu
+Result: 4/4 checks pass
+```python
+def count_vowels(word):
+    count = 0
+    # loop over each letter
+    vowels = "aeiouAEIOU"
+    for char in word:
+        if char in vowels:
+            count += 1
+    return count
+
+
+print(count_vowels("programming"))
+```
+
+
+# Only the code
+def count_vowels(word):
+    count = 0
+    # loop over each letter
+    vowels = "aeiouAEIOU"
+    for char in word:
+        if char in vowels:
+            count += 1
+    return count
+
+
+print(count_vowels("programming"))
