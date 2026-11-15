@@ -1,0 +1,15 @@
+Lesson 2 · H2 Most common letter · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+def most_common(word):
+    counts = {}
+    # 1. count every letter
+    for char in word:
+        counts[char] = counts.get(char, 0) + 1
+    # 2. find the letter with the biggest count
+    return max(counts, key=counts.get)
+
+
+print(most_common("banana"))
+```
