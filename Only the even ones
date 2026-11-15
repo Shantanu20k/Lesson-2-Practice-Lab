@@ -1,0 +1,21 @@
+Lesson 2 · R2 Only the even ones · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+nums = [3, 8, 5, 12, 7, 10]
+# print each even number
+
+for num in nums:
+    if num % 2 == 0:
+        print(num)
+```
+
+
+
+# Only the code 
+nums = [3, 8, 5, 12, 7, 10]
+# print each even number
+
+for num in nums:
+    if num % 2 == 0:
+        print(num)
