@@ -1,0 +1,32 @@
+Lesson 2 · H3 First unique letter · Python
+Name: Shantanu
+Result: 4/4 checks pass
+```python
+def first_unique(word):
+    counts = {}
+    # pass 1: count
+    for char in word:
+        counts[char] = counts.get(char, 0) + 1
+    # pass 2: first letter whose count is 1
+    for char in word:
+        if counts[char] == 1:
+            return char
+    return None
+
+
+print(first_unique("swiss"))
+```
+# Only the code
+def first_unique(word):
+    counts = {}
+    # pass 1: count
+    for char in word:
+        counts[char] = counts.get(char, 0) + 1
+    # pass 2: first letter whose count is 1
+    for char in word:
+        if counts[char] == 1:
+            return char
+    return None
+
+
+print(first_unique("swiss"))
