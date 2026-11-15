@@ -1,0 +1,36 @@
+Lesson 2 · S2 Balanced brackets · Python
+Name: Shantanu
+Result: 6/6 checks pass
+```python
+def is_balanced(text):
+  pairs = {")": "(", "]": "[", "}": "{"}
+  stack = []
+  # opening bracket: push. closing bracket: pop and check it matches
+  for char in text:
+    if char in pairs.values():
+      stack.append(char)
+    elif char in pairs:
+      if not stack or stack.pop() != pairs[char]:
+        return False
+  return len(stack) == 0
+
+
+print(is_balanced("(a[b]{c})"))
+```
+
+
+# Only the code
+def is_balanced(text):
+  pairs = {")": "(", "]": "[", "}": "{"}
+  stack = []
+  # opening bracket: push. closing bracket: pop and check it matches
+  for char in text:
+    if char in pairs.values():
+      stack.append(char)
+    elif char in pairs:
+      if not stack or stack.pop() != pairs[char]:
+        return False
+  return len(stack) == 0
+
+
+print(is_balanced("(a[b]{c})"))
