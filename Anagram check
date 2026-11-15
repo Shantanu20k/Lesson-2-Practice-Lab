@@ -1,0 +1,36 @@
+Lesson 2 · H4 Anagram check · Python
+Name: Shantanu
+Result: 4/4 checks pass
+```python
+def is_anagram(a, b):
+  # build a count dictionary for each word, then compare them
+  dict_a = {}
+  for char in a:
+    dict_a[char] = dict_a.get(char, 0) + 1
+
+  dict_b = {}
+  for char in b:
+    dict_b[char] = dict_b.get(char, 0) + 1
+
+  return dict_a == dict_b
+
+
+print(is_anagram("listen", "silent"))
+```
+
+
+# Only the code
+def is_anagram(a, b):
+  # build a count dictionary for each word, then compare them
+  dict_a = {}
+  for char in a:
+    dict_a[char] = dict_a.get(char, 0) + 1
+
+  dict_b = {}
+  for char in b:
+    dict_b[char] = dict_b.get(char, 0) + 1
+
+  return dict_a == dict_b
+
+
+print(is_anagram("listen", "silent"))
