@@ -1,0 +1,26 @@
+Lesson 2 · F1 Average of a list · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+def average(nums):
+    # add up with a loop, then return total / len(nums)
+    total = 0
+    for num in nums:
+        total += num
+    return total / len(nums)
+
+
+print(average([72, 85, 90, 64]))
+```
+
+
+# Only the code 
+def average(nums):
+    # add up with a loop, then return total / len(nums)
+    total = 0
+    for num in nums:
+        total += num
+    return total / len(nums)
+
+
+print(average([72, 85, 90, 64]))
