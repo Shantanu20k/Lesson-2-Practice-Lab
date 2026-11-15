@@ -1,0 +1,26 @@
+Lesson 2 · H1 Count the letters · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+def count_letters(word):
+    counts = {}
+    # for each letter: add 1 to its count
+    for char in word:
+        counts[char] = counts.get(char, 0) + 1
+    return counts
+
+
+print(count_letters("banana"))
+```
+
+
+# Only the code
+def count_letters(word):
+    counts = {}
+    # for each letter: add 1 to its count
+    for char in word:
+        counts[char] = counts.get(char, 0) + 1
+    return counts
+
+
+print(count_letters("banana"))
