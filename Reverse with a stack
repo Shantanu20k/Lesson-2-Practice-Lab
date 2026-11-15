@@ -1,0 +1,38 @@
+Lesson 2 · S1 Reverse with a stack · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+def reverse_with_stack(text):
+  stack = []
+  # push every character
+  for char in text:
+    stack.append(char)
+
+  result = ""
+  # pop until the stack is empty
+  while stack:
+    result += stack.pop()
+
+  return result
+
+
+print(reverse_with_stack("hello"))
+```
+
+
+# Only the code
+def reverse_with_stack(text):
+  stack = []
+  # push every character
+  for char in text:
+    stack.append(char)
+
+  result = ""
+  # pop until the stack is empty
+  while stack:
+    result += stack.pop()
+
+  return result
+
+
+print(reverse_with_stack("hello"))
