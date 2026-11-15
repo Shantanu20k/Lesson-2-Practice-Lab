@@ -1,0 +1,36 @@
+Lesson 2 · R1 Class report · Python
+Name: Shantanu
+Result: Checks not run yet
+```python
+marks = [72, 85, 90, 64]
+# 1. total with a loop
+# 2. average = total / number of marks
+# 3. if average >= 75 print the first message, else the second
+total = 0
+for m in marks:
+    total = total + m
+
+average = total / len(marks)
+
+if average >= 75:
+    print(f"Great class! Average: {average}")
+else:
+    print(f"Keep practising. Average: {average}")
+```
+
+
+# Only the code
+marks = [72, 85, 90, 64]
+# 1. total with a loop
+# 2. average = total / number of marks
+# 3. if average >= 75 print the first message, else the second
+total = 0
+for m in marks:
+    total = total + m
+
+average = total / len(marks)
+
+if average >= 75:
+    print(f"Great class! Average: {average}")
+else:
+    print(f"Keep practising. Average: {average}")
