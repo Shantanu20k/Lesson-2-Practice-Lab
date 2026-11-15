@@ -1,0 +1,32 @@
+Lesson 2 · A3 Reverse a list in place · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+def reverse_in_place(items):
+    left = 0
+    right = len(items) - 1
+    # swap and move inwards
+    while left < right:
+        items[left], items[right] = items[right], items[left]
+        left += 1
+        right -= 1
+    return items
+
+
+print(reverse_in_place([1, 2, 3, 4, 5]))
+```
+
+
+# Only the code
+def reverse_in_place(items):
+    left = 0
+    right = len(items) - 1
+    # swap and move inwards
+    while left < right:
+        items[left], items[right] = items[right], items[left]
+        left += 1
+        right -= 1
+    return items
+
+
+print(reverse_in_place([1, 2, 3, 4, 5]))
