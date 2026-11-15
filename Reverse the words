@@ -1,0 +1,26 @@
+Lesson 2 · A4 Reverse the words · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+def reverse_words(sentence):
+    words = sentence.split()
+# reverse the list of words, then join with spaces
+    words.reverse()
+    return " ".join(words)
+
+
+print(reverse_words("I love Python"))
+```
+
+
+# Only the code 
+def reverse_words(sentence):
+    words = sentence.split()
+# reverse the list of words, then join with spaces
+    words.reverse()
+    return " ".join(words)
+
+
+print(reverse_words("I love Python"))
+
+
