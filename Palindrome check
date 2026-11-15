@@ -1,0 +1,36 @@
+Lesson 2 · A2 Palindrome check · Python
+Name: Shantanu
+Result: 5/5 checks pass
+```python
+def is_palindrome(word):
+    word = word.lower()
+    left = 0
+    right = len(word) - 1
+    # walk the pointers towards each other
+    while left < right:
+        if word[left] != word[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+
+print(is_palindrome("Madam"))
+```
+
+
+# Only the code
+def is_palindrome(word):
+    word = word.lower()
+    left = 0
+    right = len(word) - 1
+    # walk the pointers towards each other
+    while left < right:
+        if word[left] != word[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+
+print(is_palindrome("Madam"))
