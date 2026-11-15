@@ -1,0 +1,26 @@
+Lesson 2 · W2 Word count · Python
+Name: Shantanu
+Result: 2/2 checks pass
+```python
+def word_count(sentence):
+  counts = {}
+  # split into words, then count each word
+  for word in sentence.split():
+    counts[word] = counts.get(word, 0) + 1
+  return counts
+
+
+print(word_count("the cat and the hat"))
+```
+
+
+# Only the code 
+def word_count(sentence):
+  counts = {}
+  # split into words, then count each word
+  for word in sentence.split():
+    counts[word] = counts.get(word, 0) + 1
+  return counts
+
+
+print(word_count("the cat and the hat"))
