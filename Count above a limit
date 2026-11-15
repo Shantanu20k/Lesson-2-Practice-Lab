@@ -1,0 +1,28 @@
+Lesson 2 · F2 Count above a limit · Python
+Name: Shantanu
+Result: 3/3 checks pass
+```python
+def count_above(nums, limit):
+    count = 0
+    # loop and count
+    for num in nums:
+        if num > limit:
+            count += 1
+    return count
+
+
+print(count_above([72, 85, 90, 64], 80))
+```
+
+
+# Only the code
+def count_above(nums, limit):
+    count = 0
+    # loop and count
+    for num in nums:
+        if num > limit:
+            count += 1
+    return count
+
+
+print(count_above([72, 85, 90, 64], 80))
