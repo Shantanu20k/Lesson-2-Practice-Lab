@@ -1,0 +1,38 @@
+Lesson 2 · W1 Second largest · Python
+Name: Shantanu
+Result: 4/4 checks pass
+```python
+def second_largest(nums):
+  largest = None
+  second = None
+  # one loop: update largest and second
+  for num in nums:
+    if largest is None or num > largest:
+      second = largest
+      largest = num
+    elif (second is None or num > second) and num < largest:
+      second = num
+  return second
+
+
+print(second_largest([4, 9, 2, 7]))
+```
+
+
+
+# Only the code
+
+def second_largest(nums):
+  largest = None
+  second = None
+  # one loop: update largest and second
+  for num in nums:
+    if largest is None or num > largest:
+      second = largest
+      largest = num
+    elif (second is None or num > second) and num < largest:
+      second = num
+  return second
+
+
+print(second_largest([4, 9, 2, 7]))
